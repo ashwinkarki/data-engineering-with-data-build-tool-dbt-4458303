@@ -1,0 +1,12 @@
+models:
+  - name: bronze_parking_violation_codes
+    description: Raw data representing the violation codes and their fees.
+    columns:
+      - name: violation_code
+        description: 'abc'
+      - name: definition
+        description: 'abc'
+      - name: manhattan_96th_st_below
+        description: 'abc'
+      - name: all_other_areas
+        description: 'abc'
