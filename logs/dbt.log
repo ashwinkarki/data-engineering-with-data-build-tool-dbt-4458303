@@ -86,3 +86,40 @@ Happy modeling!
 [0m14:46:02.666039 [debug] [MainThread]: Command `dbt init` succeeded at 14:46:02.665869 after 14.26 seconds
 [0m14:46:02.666562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756c1da92530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756c1b367070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x756c1b3670a0>]}
 [0m14:46:02.667076 [debug] [MainThread]: Flushing usage events
+[0m15:14:05.217584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cf74ecfe530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cf74c4e7970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cf74c4e7910>]}
+
+
+============================== 15:14:05.227138 | f87ff642-2892-454d-a62e-4248ea047a33 ==============================
+[0m15:14:05.227138 [info ] [MainThread]: Running with dbt=1.6.1
+[0m15:14:05.228044 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'fail_fast': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'quiet': 'False', 'log_path': 'logs', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt debug', 'warn_error': 'None', 'introspect': 'True', 'indirect_selection': 'eager', 'debug': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'cache_selected_only': 'False', 'printer_width': '80', 'write_json': 'True'}
+[0m15:14:05.229328 [info ] [MainThread]: dbt version: 1.6.1
+[0m15:14:05.230181 [info ] [MainThread]: python version: 3.10.12
+[0m15:14:05.231046 [info ] [MainThread]: python path: /workspaces/data-engineering-with-data-build-tool-dbt-4458303/.venv/bin/python
+[0m15:14:05.231853 [info ] [MainThread]: os info: Linux-6.8.0-1044-azure-x86_64-with-glibc2.31
+[0m15:14:05.232769 [info ] [MainThread]: Using profiles dir at /home/vscode/.dbt
+[0m15:14:05.233788 [info ] [MainThread]: Using profiles.yml file at /home/vscode/.dbt/profiles.yml
+[0m15:14:05.235356 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/data-engineering-with-data-build-tool-dbt-4458303/dbt_project.yml
+[0m15:14:05.236339 [info ] [MainThread]: Configuration:
+[0m15:14:05.237082 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m15:14:05.237948 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:14:05.238935 [info ] [MainThread]: Required dependencies:
+[0m15:14:05.240568 [debug] [MainThread]: Executing "git --help"
+[0m15:14:05.244002 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:14:05.244971 [debug] [MainThread]: STDERR: "b''"
+[0m15:14:05.245857 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:14:05.246842 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m15:14:05.247762 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:14:05.248585 [info ] [MainThread]: dbt looked for a profiles.yml file in /home/vscode/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:14:05.249428 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </workspaces/data-engineering-with-data-build-tool-dbt-4458303/dbt_project.yml> not found
+
+[0m15:14:05.250668 [debug] [MainThread]: Command `dbt debug` failed at 15:14:05.250522 after 0.04 seconds
+[0m15:14:05.251404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cf74ecfe530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cf74c5630a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cf74c563010>]}
+[0m15:14:05.252141 [debug] [MainThread]: Flushing usage events
